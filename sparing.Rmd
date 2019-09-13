@@ -1,0 +1,67 @@
+---
+title: "sparing"
+author: "Alex"
+date: "12.09.2019"
+output:
+  html_document:
+  pdf_document:
+    keep_tex: yes
+---
+
+## Setup
+```{r setup, include=FALSE, echo=T}
+knitr::opts_chunk$set(tidy=TRUE, cache=FALSE, dev = 'pdf')
+    # fig_width: 5
+    # fig_height: 9
+suppressPackageStartupMessages(library(tidyverse))
+#suppressPackageStartupMessages(library(ggrepel))
+#suppressPackageStartupMessages(library(data.table))
+#suppressPackageStartupMessages(library(stringr))
+#suppressPackageStartupMessages(library(scales))
+#suppressPackageStartupMessages(library(ggthemes))
+#suppressPackageStartupMessages(library(lazyeval))
+#suppressPackageStartupMessages(library(rlang))
+# suppressPackageStartupMessages(library(janitor))
+```
+---
+```{r}
+# source("src/___.R")
+```
+---
+
+```{r}
+# orig_data <- read_excel("input_data/___")
+summary(cars)
+```
+---
+
+## Data wrangle 1
+```{r Data wrangle 1}
+
+```
+
+## Data wrangle 2
+```{r Data wrangle 2}
+
+```
+---
+
+## Overview
+```{r Overview}
+# write.csv2(x= , file="output_data/___.csv")
+# write.csv2(x= , file="results/___.csv")
+```
+---
+
+## Data visualization
+```{r Visualizations}
+qplot(as.integer(cars$speed), as.integer(cars$dist))
+
+# ggsave(plot=last_plot(), filename="results/figures/___.png")
+```
+---
+
+## Analysis
+
+
+## Discussion
