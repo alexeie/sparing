@@ -43,3 +43,13 @@ ggplot(result, aes(x=aar, y=kum_renteInntekt))+
     geom_line(aes(color=as.factor(rente_pros)))+
     scale_y_continuous(labels = comma)+
     labs(color = "Rente")
+
+
+result %>% 
+    filter(aar %in% c(0:30)) %>% 
+    ggplot(aes(x=aar, y=sparing_tot))+
+    geom_line(aes(color = factor(rente_pros)), size = 1.7)+
+    scale_color_viridis_d()+
+    scale_y_continuous(labels = comma)+
+    labs(color = "Rente")+
+    gghighlight(rente_pros > 0.09)
